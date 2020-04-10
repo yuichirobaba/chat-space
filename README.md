@@ -30,6 +30,7 @@ Things you may want to cover:
 |name|string|null: false,index: true|
 
 ## association
+- has_many :group
 - has_many :comments
 ## groups_usersテーブル
 
@@ -44,12 +45,12 @@ Things you may want to cover:
 
 ## groupテーブル
 |Column|Type|Options|
+|text|text||
 |user|references|null: false, foreign_key: true|
-|group|references|null: false,foreign_key: true|
-
 ## association
-- belong_to :group
+- belong_to :comments
 - belong_to :user
+
 
 ## commentsテーブル
 |Column|Type|Options|
@@ -60,4 +61,5 @@ Things you may want to cover:
 |group|references|null: false, foreign_key: true|
 
 ## Association
+- belong_to :group
 - belongs_to :user
