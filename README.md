@@ -43,7 +43,7 @@ Things you may want to cover:
 - belong_to :group
 - belong_to :user
 
-## groupテーブル
+## groupsテーブル
 |Column|Type|Options|
 |text|text||
 |user|references|null: false, foreign_key: true|
