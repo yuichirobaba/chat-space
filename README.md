@@ -32,6 +32,7 @@ Things you may want to cover:
 ## association
 - has_many :group
 - has_many :comments
+- has_many :groups_user
 ## groups_usersテーブル
 
 |Column|Type|Options|
@@ -50,6 +51,7 @@ Things you may want to cover:
 ## association
 - belong_to :comments
 - belong_to :user
+- belong_to :groups_user
 
 
 ## commentsテーブル
