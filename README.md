@@ -30,20 +30,21 @@ Things you may want to cover:
 |name|string|null: false,index: true|
 
 ## association
+- has_many :comments
 - has_many :groups_users
 - has_many :groups, though: :groups_users
 
 
 ## groupsテーブル
 |Column|Type|Options|
-|text|text||
-|user|references|null: false, foreign_key: true|
+|user|text||
+
 ## association
+- has_many :comments
 - has_many :groups_users
 - has_many :users, though: :groups_users
 
 ## groups_usersテーブル
-
 |Column|Type|Options|
 |------|----|-------|
 |user|references|null: false, foreign_key: true|
