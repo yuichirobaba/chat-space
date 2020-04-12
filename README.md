@@ -38,7 +38,7 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |user|text||
-
+|groupname|string|null: false,index: true|
 ## association
 - has_many :comments
 - has_many :groups_users
