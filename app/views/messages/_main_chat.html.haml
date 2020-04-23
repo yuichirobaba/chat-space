@@ -1,0 +1,27 @@
+.chat-main 
+  .main-header
+    .main-header__group
+      test
+      .main-header__group__member
+        Member:masa
+    .main-header__edit
+      =link_to "#" do
+        Edit
+  .messages
+    .messages__list_name
+      baba
+    .messages__list__day
+      2020/04/21/(Tue) 21:00:00
+      %p.messages__list__comment
+        おはよう
+  .form
+    %form{class:"form__new", id:"form__new"}
+      .input-text
+        %input{placeholder: "text a messaage",class:"input-text__new",type:"text",name:"massage[content]",id:"message_content"}
+        
+          %label{class: "input-text__image",for:"message_image"}
+            = icon('fas', 'image')
+            %input{type: "file",class:"input-text__image__file",name:"message[image]",id:"message_image"}
+      
+      %input{type: "submit", value: "Send",class:"text-botton",name:"comment"}
+
