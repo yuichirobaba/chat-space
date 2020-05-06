@@ -43,7 +43,7 @@ width: calc(100vw - 300px);
 background-color: #fafafa;
 margin-left: auto;
 padding-top: 35px;
-display: flex;
+overflow: scroll;
 
 &__list__name{
   color: #333333;
