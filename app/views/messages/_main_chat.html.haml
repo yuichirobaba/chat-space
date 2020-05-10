@@ -1,12 +1,12 @@
 .chat-main 
   .main-header
     .main-header__group
-      
+      =@group.name
       .main-header__group__member
-        
+        =@group.users.name
     .main-header__edit
-      
-      Edit
+      =link_to edit_group_path(@group) do
+        Edit
   .messages
     =render @messages
      
