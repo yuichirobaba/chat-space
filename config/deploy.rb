@@ -21,14 +21,11 @@ set :linked_files, %w{ config/secrets.yml }
         execute "mkdir -p #{shared_path}/config"
       end
       upload!('config/secrets.yml', "#{shared_path}/config/secrets.yml")
-    end
-  end
+    
   before :starting, 'deploy:upload'
   after :finishing, 'deploy:cleanup'
-end
-
-
-end
+  end
+  end
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
