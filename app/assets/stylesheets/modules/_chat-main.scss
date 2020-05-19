@@ -8,7 +8,6 @@
  height: 100px;
  width: calc(100vw - 300px);
  background-color: #ffffff;
- margin-left: auto;
  display: flex;
  justify-content: space-between;
  border-bottom: solid 1px #eee;
@@ -33,7 +32,7 @@
   position: absolute;
   right: 40px;
   a{
-    color: black;
+    color:#38aef0;
     text-decoration: none;
   }
 }
@@ -44,12 +43,10 @@
 height:calc(100vh - 100px - 90px);
 width: calc(100vw - 300px);
 background-color: #fafafa;
-margin-left: auto;
+margin-left: 20px;
 padding-top: 35px;
 overflow: scroll;
-a{
-  padding-left: 20px;
-}
+
 
 &__list__name{
   color: #333333;
@@ -67,6 +64,9 @@ a{
   padding-top: 12px;
   padding-bottom: 46px;
 }
+}
+.message{
+  padding-left: 20px;
 }
 .form{
 height: 90px;
